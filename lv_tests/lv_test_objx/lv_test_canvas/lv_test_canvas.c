@@ -59,7 +59,7 @@ void lv_test_canvas_1(void)
     static lv_color_t cbuf[LV_CANVAS_BUF_SIZE_TRUE_COLOR(CANVAS_WIDTH, CANVAS_HEIGHT)];
     lv_canvas_set_buffer(canvas, cbuf, CANVAS_WIDTH, CANVAS_HEIGHT, LV_IMG_CF_TRUE_COLOR);
     lv_obj_set_pos(canvas, 10, 10);
-    lv_canvas_fill_bg(canvas, LV_COLOR_SILVER);
+    lv_canvas_fill_bg(canvas, LV_COLOR_SILVER, LV_OPA_100);
 
     lv_canvas_draw_rect(canvas, 40, 10, 50, 30, &style);
 
